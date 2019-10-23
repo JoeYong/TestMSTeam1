@@ -5,7 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TestMSTeam1.Models;
-using Serilog;
+//using Serilog;
+using Microsoft.Extensions.Logging;
 
 namespace TestMSTeam1.Controllers
 {
@@ -20,7 +21,7 @@ namespace TestMSTeam1.Controllers
 
 		public IActionResult Index()
 		{
-			logger.Error("Error!");
+			logger.LogError("Error!");
 			return View();
 		}
 

@@ -32,7 +32,8 @@ namespace TestMSTeam1
 			WebHost.CreateDefaultBuilder(args)
 				.UseStartup<Startup>()
 				.UseSerilog()
-				.UseKestrel()
+				//.UseKestrel()
+				//.ConfigureKestrel()
 				.Build();
 
 		public static void Main(string[] args)
