@@ -14,7 +14,7 @@ namespace TestMSTeam1.Controllers
 	{
 		private readonly ILogger logger;
 
-		public HomeController(ILogger logger)
+		public HomeController(ILogger<HomeController> logger)
 		{
 			this.logger = logger;
 		}
