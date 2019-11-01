@@ -21,7 +21,14 @@ namespace TestMSTeam1.Controllers
 
 		public IActionResult Index()
 		{
-			logger.LogError("Error!");
+			// Testing
+			logger.LogInformation("Information Test");
+			logger.LogWarning("Warning Test");
+			logger.LogCritical("Critical Test");
+			logger.LogError("Error Test");
+			logger.LogDebug("Debug Test");
+			// Testing
+
 			return View();
 		}
 
